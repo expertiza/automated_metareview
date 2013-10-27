@@ -15,10 +15,10 @@ require 'automated_metareview/wordnet_based_similarity'
 #gem install edavis10-ruby-web-search
 #gem install google-api-client
 
-class AutomatedMetareview #< ActiveRecord::Base
+#class AutomatedMetareview #< ActiveRecord::Base
   #belongs_to :response, :class_name => 'Response', :foreign_key => 'response_id'
   #has_many :scores, :class_name => 'Score', :foreign_key => 'response_id', :dependent => :destroy
-  def self.hi
-    puts "hello"
-  end
-end
+ # def self.hi
+ #   puts "hello"
+ # end
+#end
