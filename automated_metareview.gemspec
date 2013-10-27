@@ -13,11 +13,15 @@ Gem::Specification.new do |spec|
   spec.homepage      = ""
   spec.license       = "MIT"
 
-  spec.files         = ["lib/automated_metareview.rb", "lib/automated_metareview/text_preprocessing.rb","lib/automated_metareview/predict_class.rb","lib/automated_metareview/degree_of_relevance.rb","lib/automated_metareview/plagiarism_check.rb","lib/automated_metareview/tone.rb","lib/automated_metareview/text_quantity.rb","lib/automated_metareview/constants.rb"]
+  spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "engtagger"
+  spec.add_development_dependency "rspec-rails"
+  spec.add_development_dependency "activerecord"
+
 end
