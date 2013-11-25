@@ -234,34 +234,18 @@ end
 =begin
 Check for plagiarism after removing text within quotes for reviews
 =end
-def remove_text_within_quotes(review_text)
-  # puts "Inside removeTextWithinQuotes:: "
-  reviews = Array.new
-  review_text.each{ |row|
-    # puts "row #{row}"
-    text = row 
-    #text = text[1..text.length-2] #since the first and last characters are quotes
-    #puts "text #{text}"
-    #the read text is tagged with two sets of quotes!
-    if(text.include?("\""))
-      while(text.include?("\"")) do
-        replace_text = text.scan(/"([^"]*)"/)
-        # puts "replace_text #{replace_text[0]}.. #{replace_text[0].to_s.class} .. #{replace_text.length}"
-        # puts text.index(replace_text[0].to_s)
-        # puts "replace_text length .. #{replace_text[0].to_s.length}"
-        #fetching the start index of the quoted text, in order to replace the complete segment
-        start_index = text.index(replace_text[0].to_s) - 1 #-1 in order to start from the quote
-        # puts "text[start_index..start_index + replace_text[0].to_s.length+1] .. #{text[start_index.. start_index + replace_text[0].to_s.length+1]}"
-        #replacing the text segment within the quotes (including the quotes) with an empty string
-        text.gsub!(text[start_index..start_index + replace_text[0].to_s.length+1], "")
-        # puts "text .. #{text}"
-      end #end of the while loop
-    end
-    reviews << text #set the text after all quoted segments have been removed.
-  } #end of the loop for "text" array
-  # puts "returning reviews length .. #{reviews.length}"
-  return reviews #return only the first array element - a string!
-end
+  def remove_text_within_quotes(review_text)
+    text = []
+    first =  review_text.to_s.index('"')
+    second = review_text.to_s.index('"', first+1)
+    text_s =  review_text.to_s[1...second-1]
+    text_s.each_char{
+        |c|
+      text << c
+    }
+
+    text
+  end
 #------------------------------------------#------------------------------------------#------------------------------------------   
 =begin
  Looks for spelling mistakes in the text and fixes them using the raspell library available for ruby 
