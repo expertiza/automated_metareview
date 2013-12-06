@@ -7,40 +7,26 @@ require 'automated_metareview/text_quantity'
 require 'automated_metareview/constants'
 require 'ffi/aspell'
 
-
-#gem install edavis10-ruby-web-search
-#gem install google-api-client
-
 class AutomatedMetareview < ActiveRecord::Base
   #belongs_to :response, :class_name => 'Response', :foreign_key => 'response_id'
   #has_many :scores, :class_name => 'Score', :foreign_key => 'response_id', :dependent => :destroy
   attr_accessor :responses, :review_array
   #the code that drives the metareviewing
   def calculate_metareview_metrics(response, map_id)
-    # puts "inside perform_metareviews!!"    
-    
     preprocess = TextPreprocessing.new
-    # puts "map_id #{map_id}"
+
     #fetch the review data as an array 
     @review_array = preprocess.fetch_review_data(self, map_id)
-    # puts "self.responses #{self.responses}"
-    
-    #speller = Aspell.new("en_US")
+
     speller = FFI::Aspell::Speller.new('en_US')
     speller.suggestion_mode = Aspell::NORMAL
 
-   # @review_array = preprocess.check_correct_spellings(@review_array, speller)
-    # puts "printing review_array"
-    @review_array.each{
-      |rev|
-      puts rev
-    }
-    
+    @review_array = preprocess.check_correct_spellings(@review_array, speller)
+
     #checking for plagiarism by comparing with question and responses
     plag_instance = PlagiarismChecker.new
     result_comparison = plag_instance.compare_reviews_with_questions_responses(self, map_id)
-    # puts "review_array.length #{@review_array.length}"
-    
+
     if(result_comparison == ALL_RESPONSES_PLAGIARISED)
       self.content_summative = 0
       self.content_problem = 0 
