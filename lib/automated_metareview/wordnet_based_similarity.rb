@@ -3,7 +3,7 @@ require 'automated_metareview/constants'
 
 class WordnetBasedSimilarity
   attr_accessor :match, :count
- # @@posTagger = EngTagger.new
+  @@posTagger = EngTagger.new  
   def compare_strings(reviewVertex, submVertex, speller)
     #must fix this to something that is local to the app
     # WordNet::WordNetDB.path = "/usr/local/WordNet-3.0"
