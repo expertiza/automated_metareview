@@ -1,0 +1,107 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AutomatedMetareview	lib/automated_metareview.rb	/^class AutomatedMetareview < ActiveRecord::Base$/;"	c
+AutomatedMetareview	lib/automated_metareview/version.rb	/^module AutomatedMetareview$/;"	m
+CompareGraphEdges	lib/automated_metareview/compare_graph_edges.rb	/^class CompareGraphEdges$/;"	c
+CompareGraphSVOEdges	lib/automated_metareview/compare_graph_svo_edges.rb	/^class CompareGraphSVOEdges$/;"	c
+CompareGraphVertices	lib/automated_metareview/compare_graph_vertices.rb	/^class CompareGraphVertices$/;"	c
+DegreeOfRelevance	lib/automated_metareview/degree_of_relevance.rb	/^class DegreeOfRelevance$/;"	c
+Edge	lib/automated_metareview/edge.rb	/^class Edge$/;"	c
+GraphGenerator	lib/automated_metareview/graph_generator.rb	/^class GraphGenerator$/;"	c
+PlagiarismChecker	lib/automated_metareview/plagiarism_check.rb	/^class PlagiarismChecker$/;"	c
+PredictClass	lib/automated_metareview/predict_class.rb	/^class PredictClass$/;"	c
+SentenceState	lib/automated_metareview/sentence_state.rb	/^class SentenceState$/;"	c
+TaggedSentence	lib/automated_metareview/tagged_sentence.rb	/^class TaggedSentence$/;"	c
+TextPreprocessing	lib/automated_metareview/text_preprocessing.rb	/^class TextPreprocessing$/;"	c
+TextQuantity	lib/automated_metareview/text_quantity.rb	/^class TextQuantity$/;"	c
+Tone	lib/automated_metareview/tone.rb	/^class Tone$/;"	c
+Vertex	lib/automated_metareview/vertex.rb	/^class Vertex$/;"	c
+WordnetBasedSimilarity	lib/automated_metareview/wordnet_based_similarity.rb	/^class WordnetBasedSimilarity$/;"	c
+break_at_coord_conjunctions	lib/automated_metareview/tagged_sentence.rb	/^  def break_at_coord_conjunctions$/;"	f	class:TaggedSentence
+break_at_coordinating_conjunctions	lib/automated_metareview/sentence_state.rb	/^  def break_at_coordinating_conjunctions(str_with_pos_tags)$/;"	f	class:SentenceState
+calculate_avg_match	lib/automated_metareview/compare_graph_edges.rb	/^  def calculate_avg_match(cum_edge_match, count)$/;"	f	class:CompareGraphEdges
+calculate_avg_match	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def calculate_avg_match(cum_double_edge_match, count)$/;"	f	class:CompareGraphSVOEdges
+calculate_avg_match	lib/automated_metareview/compare_graph_vertices.rb	/^def calculate_avg_match(cum_vertex_match, count)$/;"	f
+calculate_metareview_metrics	lib/automated_metareview.rb	/^  def calculate_metareview_metrics(response, map_id)$/;"	f	class:AutomatedMetareview
+check_correct_spellings	lib/automated_metareview/text_preprocessing.rb	/^def check_correct_spellings(review_text_array, speller)$/;"	f	class:TextPreprocessing
+check_for_plagiarism	lib/automated_metareview/plagiarism_check.rb	/^def check_for_plagiarism(review_text, subm_text)$/;"	f	class:PlagiarismChecker
+check_match	lib/automated_metareview/wordnet_based_similarity.rb	/^def check_match(rev_token, subm_token, rev_arr, subm_arr, rev_stem, subm_stem, rev_state, subm_state, match_type, non_match_type)$/;"	f	class:WordnetBasedSimilarity
+compare_SVO_diff_syntax	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def compare_SVO_diff_syntax(vertex_match, rev, subm, num_rev_edg, num_sub_edg)$/;"	f	class:CompareGraphSVOEdges
+compare_SVO_edges	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def compare_SVO_edges(vertex_match, rev, subm, num_rev_edg, num_sub_edg)$/;"	f	class:CompareGraphSVOEdges
+compare_edges	lib/automated_metareview/predict_class.rb	/^def compare_edges(e1, e2, wordnet)$/;"	f	class:PredictClass
+compare_edges_diff_types	lib/automated_metareview/compare_graph_edges.rb	/^  def compare_edges_diff_types(vertex_match, rev, subm, num_rev_edg, num_sub_edg)$/;"	f	class:CompareGraphEdges
+compare_edges_non_syntax_diff	lib/automated_metareview/compare_graph_edges.rb	/^  def compare_edges_non_syntax_diff(vertex_match,rev, subm, num_rev_edg, num_sub_edg)$/;"	f	class:CompareGraphEdges
+compare_edges_syntax_diff	lib/automated_metareview/compare_graph_edges.rb	/^  def compare_edges_syntax_diff(vertex_match, rev, subm, num_rev_edg, num_sub_edg)$/;"	f	class:CompareGraphEdges
+compare_labels	lib/automated_metareview/degree_of_relevance.rb	/^  def compare_labels(edge1, edge2)$/;"	f	class:DegreeOfRelevance
+compare_review_with_patterns	lib/automated_metareview/predict_class.rb	/^def compare_review_with_patterns(single_edges, single_patterns, wordnet)$/;"	f	class:PredictClass
+compare_reviews_with_questions_responses	lib/automated_metareview/plagiarism_check.rb	/^  def compare_reviews_with_questions_responses(auto_metareview, map_id)$/;"	f	class:PlagiarismChecker.check_for_plagiarism
+compare_strings	lib/automated_metareview/wordnet_based_similarity.rb	/^  def compare_strings(reviewVertex, submVertex, speller)$/;"	f	class:WordnetBasedSimilarity
+compare_vertices	lib/automated_metareview/compare_graph_vertices.rb	/^  def compare_vertices(vertex_match, pos_tagger, rev, subm, num_rev_vert, num_sub_vert, speller)$/;"	f	class:CompareGraphVertices
+contains_punct	lib/automated_metareview/text_preprocessing.rb	/^def contains_punct(str)$/;"	f	class:TextPreprocessing
+contains_punct_bool	lib/automated_metareview/text_preprocessing.rb	/^def contains_punct_bool(str)$/;"	f	class:TextPreprocessing
+determine_POS	lib/automated_metareview/wordnet_based_similarity.rb	/^def determine_POS(vert)$/;"	f	class:WordnetBasedSimilarity
+edge_asymm_vertex_type_check	lib/automated_metareview/compare_graph_edges.rb	/^  def edge_asymm_vertex_type_check(edge1, edge2)$/;"	f	class:CompareGraphEdges
+edge_nil_cond_check	lib/automated_metareview/compare_graph_edges.rb	/^  def edge_nil_cond_check(edge)$/;"	f	class:CompareGraphEdges
+edge_symm_vertex_type_check	lib/automated_metareview/compare_graph_edges.rb	/^  def edge_symm_vertex_type_check(edge1, edge2)$/;"	f	class:CompareGraphEdges
+edge_vertex_check1	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def edge_vertex_check1(edge1, edge2, edge3, edge4)$/;"	f	class:CompareGraphSVOEdges
+edge_vertex_check2	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def edge_vertex_check2(edge1, edge2, edge3, edge4)$/;"	f	class:CompareGraphSVOEdges
+extract_definition	lib/automated_metareview/wordnet_based_similarity.rb	/^def extract_definition(glosses)$/;"	f	class:WordnetBasedSimilarity.find_stem_word
+fetch_review_data	lib/automated_metareview/text_preprocessing.rb	/^  def fetch_review_data(auto_metareview, map_id)$/;"	f	class:TextPreprocessing
+fetch_submission_data	lib/automated_metareview/text_preprocessing.rb	/^  def fetch_submission_data(map_id)$/;"	f	class:TextPreprocessing
+find_labels	lib/automated_metareview/graph_generator.rb	/^def find_labels(t)$/;"	f	class:GraphGenerator.generate_graph.remove_redundant_edges
+find_parents	lib/automated_metareview/graph_generator.rb	/^def find_parents(t)$/;"	f	class:GraphGenerator.generate_graph.remove_redundant_edges
+find_stem_word	lib/automated_metareview/wordnet_based_similarity.rb	/^def find_stem_word(word, speller)$/;"	f	class:WordnetBasedSimilarity
+flag_cond_var_set	lib/automated_metareview/compare_graph_edges.rb	/^  def flag_cond_var_set(cum_edge_match, max, count, flag, bdg)$/;"	f	class:CompareGraphEdges
+flag_cond_var_set	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def flag_cond_var_set(cum_double_edge_match, max, count, flag, bdg)$/;"	f	class:CompareGraphSVOEdges
+flag_cond_var_set	lib/automated_metareview/compare_graph_vertices.rb	/^def flag_cond_var_set(cum_vertex_match, max, count, flag, bdg)$/;"	f
+generate_graph	lib/automated_metareview/graph_generator.rb	/^def generate_graph(text, pos_tagger, coreNLPTagger, forRelevance, forPatternIdentify)$/;"	f	class:GraphGenerator
+get_feature_vector	lib/automated_metareview/tone.rb	/^  def get_feature_vector(vertex, positive, negative, speller)    $/;"	f	class:Tone
+get_relations_for_review_submission_tokens	lib/automated_metareview/wordnet_based_similarity.rb	/^def get_relations_for_review_submission_tokens(token, stem, pos)$/;"	f	class:WordnetBasedSimilarity
+get_relevance	lib/automated_metareview/degree_of_relevance.rb	/^def get_relevance(reviews, submissions, num_reviews, pos_tagger, core_NLP_tagger, speller)$/;"	f	class:DegreeOfRelevance
+get_synonyms	lib/automated_metareview/tone.rb	/^  def get_synonyms(vertex, threshold, speller)$/;"	f	class:Tone
+google_search_response	lib/automated_metareview/plagiarism_check.rb	/^  def google_search_response(auto_metareview)$/;"	f	class:PlagiarismChecker.check_for_plagiarism
+identify_frequency_and_prune_edges	lib/automated_metareview/graph_generator.rb	/^def identify_frequency_and_prune_edges(edges, num)$/;"	f	class:GraphGenerator.generate_graph.remove_redundant_edges
+identify_sentence_state	lib/automated_metareview/sentence_state.rb	/^  def identify_sentence_state(str_with_pos_tags)$/;"	f	class:SentenceState
+identify_tone	lib/automated_metareview/tone.rb	/^  def identify_tone(pos_tagger, core_NLP_tagger, review_text, review_graph)$/;"	f	class:Tone
+initialize	lib/automated_metareview/edge.rb	/^  def initialize(edge_name, edge_type)$/;"	f	class:Edge
+initialize	lib/automated_metareview/tagged_sentence.rb	/^  def initialize(str_with_pos_tags)$/;"	f	class:TaggedSentence
+initialize	lib/automated_metareview/vertex.rb	/^  def initialize(vertex_name, vertex_type, index_value, state, lab, par, pos_tag)$/;"	f	class:Vertex
+is_frequent_word	lib/automated_metareview/wordnet_based_similarity.rb	/^def is_frequent_word(word)$/;"	f	class:WordnetBasedSimilarity
+is_negative_descriptor	lib/automated_metareview/sentence_state.rb	/^def is_negative_descriptor(word)$/;"	f	class:SentenceState.sentence_state
+is_negative_phrase	lib/automated_metareview/sentence_state.rb	/^def is_negative_phrase(phrase)$/;"	f	class:SentenceState.sentence_state
+is_negative_word	lib/automated_metareview/sentence_state.rb	/^def is_negative_word(word)$/;"	f	class:SentenceState.sentence_state
+is_punct	lib/automated_metareview/text_preprocessing.rb	/^def is_punct(str)$/;"	f	class:TextPreprocessing
+is_suggestive	lib/automated_metareview/sentence_state.rb	/^def is_suggestive(word)$/;"	f	class:SentenceState.sentence_state
+is_suggestive_phrase	lib/automated_metareview/sentence_state.rb	/^def is_suggestive_phrase(phrase)$/;"	f	class:SentenceState.sentence_state
+max_calculation	lib/automated_metareview/compare_graph_edges.rb	/^  def max_calculation(cou, sum, edge1, edge2, oldmax)$/;"	f	class:CompareGraphEdges
+max_calculation	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def max_calculation(cou, sum, edge1, edge2, edge3, edge4, oldmax)$/;"	f	class:CompareGraphSVOEdges
+max_calculation_diff_syntax	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def max_calculation_diff_syntax(cou, sum, oldmax)$/;"	f	class:CompareGraphSVOEdges
+nilCondCheck	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def nilCondCheck(edge1, edge2)$/;"	f	class:CompareGraphSVOEdges
+number_of_unique_tokens	lib/automated_metareview/text_quantity.rb	/^  def number_of_unique_tokens(text_array)$/;"	f	class:TextQuantity
+overlap	lib/automated_metareview/wordnet_based_similarity.rb	/^def overlap(def1, def2, speller)$/;"	f	class:WordnetBasedSimilarity.find_stem_word
+parse_sentence_tokens	lib/automated_metareview/tagged_sentence.rb	/^  def parse_sentence_tokens(str_with_pos_tags)$/;"	f	class:TaggedSentence
+predict_classes	lib/automated_metareview/predict_class.rb	/^def predict_classes(pos_tagger, core_NLP_tagger, review_text, review_graph, pattern_files_array, num_classes)$/;"	f	class:PredictClass
+print_graph	lib/automated_metareview/graph_generator.rb	/^def print_graph(edges, vertices)$/;"	f	class:GraphGenerator.generate_graph.remove_redundant_edges
+read_patterns	lib/automated_metareview/text_preprocessing.rb	/^def read_patterns(filename, pos)$/;"	f	class:TextPreprocessing
+remove_redundant_edges	lib/automated_metareview/graph_generator.rb	/^def remove_redundant_edges(in_vertex, out, index)$/;"	f	class:GraphGenerator.generate_graph
+remove_redundant_vertices	lib/automated_metareview/graph_generator.rb	/^def remove_redundant_vertices(s, index)$/;"	f	class:GraphGenerator.generate_graph
+remove_text_within_quotes	lib/automated_metareview/text_preprocessing.rb	/^def remove_text_within_quotes(review_text)$/;"	f	class:TextPreprocessing
+remove_urls	lib/automated_metareview/text_preprocessing.rb	/^def remove_urls(text)$/;"	f	class:TextPreprocessing
+search_edges	lib/automated_metareview/graph_generator.rb	/^def search_edges(list, in_vertex, out, index)$/;"	f	class:GraphGenerator.generate_graph
+search_edges_to_set_null	lib/automated_metareview/graph_generator.rb	/^def search_edges_to_set_null(list, in_vertex, out, index)$/;"	f	class:GraphGenerator.generate_graph
+search_vertices	lib/automated_metareview/graph_generator.rb	/^def search_vertices(list, s, index)$/;"	f	class:GraphGenerator.generate_graph
+segment_text	lib/automated_metareview/text_preprocessing.rb	/^def segment_text(flag, text_array)$/;"	f	class:TextPreprocessing
+send_metareview_metrics_email	lib/automated_metareview.rb	/^  def send_metareview_metrics_email(response, map_id)$/;"	f	class:AutomatedMetareview
+sentence_state	lib/automated_metareview/sentence_state.rb	/^  def sentence_state(str_with_pos_tags)$/;"	f	class:SentenceState
+set_semantic_labels_for_edges	lib/automated_metareview/graph_generator.rb	/^def set_semantic_labels_for_edges$/;"	f	class:GraphGenerator.generate_graph.remove_redundant_edges
+sum_cou_asymm_calculation	lib/automated_metareview/compare_graph_edges.rb	/^  def sum_cou_asymm_calculation(vertex_match, edge1, edge2)$/;"	f	class:CompareGraphEdges
+sum_cou_calculation	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def sum_cou_calculation(vertex_match, edge1, edge2, edge3, edge4)$/;"	f	class:CompareGraphSVOEdges
+sum_cou_calculation_diff_syntax	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def sum_cou_calculation_diff_syntax(vertex_match,edge1, edge2, edge3, edge4)$/;"	f	class:CompareGraphSVOEdges
+sum_cou_symm_calculation	lib/automated_metareview/compare_graph_edges.rb	/^  def sum_cou_symm_calculation(vertex_match, edge1, edge2)$/;"	f	class:CompareGraphEdges
+wnetFrequentWordCheck	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def wnetFrequentWordCheck(vnet, edge)$/;"	f	class:CompareGraphSVOEdges
+wnetFrequentWordCheck2edges	lib/automated_metareview/compare_graph_svo_edges.rb	/^  def wnetFrequentWordCheck2edges(wnet, edge1, edge2)$/;"	f	class:CompareGraphSVOEdges
+wnet_frequent_word_check	lib/automated_metareview/compare_graph_edges.rb	/^  def wnet_frequent_word_check(wnet, edge)$/;"	f	class:CompareGraphEdges
