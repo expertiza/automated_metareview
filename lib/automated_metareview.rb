@@ -5,7 +5,6 @@ require 'automated_metareview/plagiarism_check'
 require 'automated_metareview/tone'
 require 'automated_metareview/text_quantity'
 require 'automated_metareview/constants'
-require 'automated_metareview/eng_tagger'
 require 'ffi/aspell'
 
 class AutomatedMetareview < ActiveRecord::Base
