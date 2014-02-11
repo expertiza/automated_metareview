@@ -1,7 +1,6 @@
 require 'wordnet' 
 #necessary to access the data.{po} files in the wordnet/dict folder of the rwordnet gem
 include WordNet
-WordNet::SynsetType = {"n" => "noun", "v" => "verb", "a" => "adj", "r" => "adv"}
     
     
 # Create a parser object

@@ -1,6 +1,7 @@
 require 'automated_metareview/vertex'
 require 'automated_metareview/constants'
-require 'automated_metareview/eng_tagger'
+require 'engtagger'
+require 'wordnet'
 
 class WordnetBasedSimilarity
   attr_accessor :match, :count
