@@ -1,0 +1,2 @@
+class EngTagger
+end
