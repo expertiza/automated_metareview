@@ -23,5 +23,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "engtagger"
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "activerecord"
+  spec.add_development_dependency "ffi-aspell"
 
 end
